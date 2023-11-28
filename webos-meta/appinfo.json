@@ -1,0 +1,12 @@
+{
+	"id": "webos-bzcall",
+	"version": "1.0.0",
+	"vendor": "LGE-SVL",
+	"type": "web",
+	"main": "index.html",
+	"title": "BzCall",
+	"icon": "icon.png",
+	"miniicon": "icon.png",
+	"largeIcon": "icon.png",
+	"uiRevision": 2
+}

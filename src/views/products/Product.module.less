@@ -1,0 +1,54 @@
+
+@import '~@enact/sandstone/styles/mixins.less';
+@import '~@enact/sandstone/styles/colors.less';
+.side {
+	width: 5%;
+	background-color: @sand-component-bg-color;
+	.focus({
+		background-color: @sand-focus-bg-color;
+	});
+}
+.valueVolume::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.valueVolume::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+// .valueVolume::-webkit-slider-runnable-track {
+//     background-color: #ddd;
+//     height: 5px;
+//     border-radius: 3px;
+// }
+
+.valueVolume::-moz-range-track {
+    background-color: #ddd;
+    height: 5px;
+    border-radius: 3px;
+}
+.valueVolume:hover::-webkit-slider-thumb {
+    background-color: #45a049; /* darker green */
+}
+
+.valueVolume:focus::-webkit-slider-thumb {
+    outline: none; /* remove default outline */
+    box-shadow: 0 0 5px #45a049; /* subtle glow */
+}
+
+.valueVolume:hover::-moz-range-thumb {
+    background-color: #45a049;
+}
+
+.valueVolume:focus::-moz-range-thumb {
+    outline: none;
+    box-shadow: 0 0 5px #45a049;
+}

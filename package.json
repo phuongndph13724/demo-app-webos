@@ -1,0 +1,62 @@
+{
+	"name": "webos-bzcall",
+	"version": "1.0.0",
+	"description": "A general template for an Enact Sandstone application for webOS TVs",
+	"author": "",
+	"main": "src/index.js",
+	"scripts": {
+		"serve": "enact serve",
+		"pack": "enact pack",
+		"pack-p": "enact pack -p",
+		"watch": "enact pack --watch",
+		"clean": "enact clean",
+		"lint": "enact lint .",
+		"license": "enact license",
+		"test": "enact test",
+		"test-watch": "enact test --watch"
+	},
+	"license": "UNLICENSED",
+	"private": true,
+	"repository": "",
+	"engines": {
+		"npm": ">=6.9.0"
+	},
+	"enact": {
+		"theme": "sandstone"
+	},
+	"eslintConfig": {
+		"extends": "enact-proxy"
+	},
+	"eslintIgnore": [
+		"node_modules/*",
+		"build/*",
+		"dist/*"
+	],
+	"dependencies": {
+		"@enact/core": "^4.7.1",
+		"@enact/i18n": "^4.7.1",
+		"@enact/sandstone": "^2.7.1",
+		"@enact/spotlight": "^4.7.1",
+		"@enact/ui": "^4.7.1",
+		"@enact/webos": "^4.7.1",
+		"@reduxjs/toolkit": "^1.9.5",
+		"@webosose/ares-cli": "^2.4.0",
+		"axios": "^1.5.0",
+		"history": "^5.3.0",
+		"ilib": "npm:ilib-webos@^14.17.0-webos1",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-redux": "^8.1.2",
+		"react-router-dom": "^6.15.0",
+		"react-toastify": "^9.1.3",
+		"socket.io-client": "^4.7.2",
+		"web-vitals": "^3.3.2"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.15",
+		"eslint-config-enact-proxy": "^1.0.5",
+		"postcss": "^8.4.28",
+		"tailwindcss": "^3.3.3"
+	}
+}
